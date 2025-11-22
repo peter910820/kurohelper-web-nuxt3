@@ -1,10 +1,10 @@
 // import this after install `@mdi/font` package
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.css';
 
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import 'vuetify/styles';
+import { createVuetify } from 'vuetify';
+import * as components from 'vuetify/components';
+import * as directives from 'vuetify/directives';
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
@@ -18,7 +18,7 @@ export default defineNuxtPlugin((app) => {
           colors: {
             background: '#121212',
             surface: '#1E1E1E',
-            primary: '#1976D2',
+            primary: '#F596AA',
             secondary: '#424242',
             error: '#FF5252',
             info: '#2196F3',
@@ -28,6 +28,6 @@ export default defineNuxtPlugin((app) => {
         },
       },
     },
-  })
-  app.vueApp.use(vuetify)
-})
+  });
+  app.vueApp.use(vuetify);
+});
